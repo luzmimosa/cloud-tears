@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Cloud Tears
+Cloud Tears es una pequeña y simple utilidad de JavaScript que crea un componente de React para crear un overlay de lluvia encima de los elementos sobre los que se renderice.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Los parámetros de esta lluvia se pueden controlar. En el propio código viene documentado cómo.
 
-## Available Scripts
+#### Características
+- **Gotas de agua personalizables:** puedes personalizar numerosos parámetros relacionados con las gotas para que queden lo más a tu gusto posible. Entre ellos se encuentran:
+-- La velocidad. Desde unas lentas gotitas cayendo hasta el más tormentoso de los chaparrones.
+-- La cantidad. Unas pocas gotas o el mismísimo diluvio bíblico.
+-- La longitud. Gotas sutiles, chiquititas, o más largas para que se aprecie más la precipitación.
 
-In the project directory, you can run:
+- **Interacción con el raton:** el ratón actúa como paraguas. Las gotas se deslizan alrededor de él en un radio que puedes establecer. Además, puedes configurar una sombra, de un tamaño mayor o menor, que evita que las gotas vuelvan a filtrarse bajo el paraguas una vez hayan rebotado.
+- **Viento:** las gotas pueden cambiar su dirección general debido a un viento configurable.
 
-### `npm start`
+#### Bugs conocidos
+- Al redimensionar el marco, el componente no se actualiza. Esto es debido a que no incorporta un listener onResize, y es de fácil arreglo en su implementación.
+- Con altos valores en el viento las gotas pierden estabilidad y pueden dar lugar a comportamientos extraños.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Dependencias
+La utilidad necesita del módulo `react-p5`. Puede instalarse usando el comando `npm i react-p5` en la consola.
